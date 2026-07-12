@@ -12,21 +12,22 @@ body {
   text-align: center;
 }
 
-/* Company Name Styling */
+/* Company Name Styling - Now the largest element */
 .site-branding {
-  font-size: 1.25rem;
-  letter-spacing: 2px;
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  font-weight: 600;
-  opacity: 0.9;
+  opacity: 1;
 }
 
-/* Main Heading Styling */
+/* Main Heading Styling - Now secondary */
 .hero h1 {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
-  line-height: 1.1;
+  font-size: 2rem;
+  line-height: 1.2;
   margin: 0 0 20px 0;
+  opacity: 0.9;
 }
 
 .container { max-width: 900px; margin: 0 auto; padding: 24px; }
