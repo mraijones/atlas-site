@@ -1,43 +1,66 @@
+/* --- Mission Control Theme --- */
+
+:root {
+  --bg-dark: #020617;
+  --bg-section: #0f172a;
+  --text-main: #f1f5f9;
+  --accent-blue: #38bdf8;
+  --border-tech: rgba(56, 189, 248, 0.3);
+}
+
 body {
   margin: 0;
-  font-family: Inter, system-ui, -apple-system, sans-serif;
-  color: #0f172a;
-  background: #f8fafc;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--text-main);
+  background: var(--bg-dark);
 }
 
 .hero {
-  background: linear-gradient(135deg, #0f172a 0%, #3b82f6 100%);
+  background: linear-gradient(135deg, #020617 0%, #1e293b 100%);
   color: white;
-  padding: 48px 24px;
+  padding: 60px 24px;
   text-align: center;
+  border-bottom: 2px solid var(--accent-blue);
 }
 
-/* Company Name Styling - Now the largest element */
+/* Company Name - Primary visual anchor */
 .site-branding {
   font-size: 3.5rem;
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 20px;
-  opacity: 1;
 }
 
-/* Main Heading Styling - Now secondary */
+/* Main Heading - Secondary anchor */
 .hero h1 {
   font-size: 2rem;
   line-height: 1.2;
   margin: 0 0 20px 0;
   opacity: 0.9;
+  font-weight: 400;
 }
 
 .container { max-width: 900px; margin: 0 auto; padding: 24px; }
 
+/* Section Components - Hardened UI style */
 section {
   margin-top: 32px;
-  background: white;
-  border-radius: 20px;
+  background: var(--bg-section);
+  border: 1px solid var(--border-tech);
+  border-radius: 8px; /* Sharper corners for technical look */
   padding: 28px;
-  box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Headers - Technical monospace style */
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: var(--accent-blue);
+  margin-top: 0;
 }
 
 .grid {
@@ -46,15 +69,23 @@ section {
   gap: 18px;
 }
 
+/* Status-indicator button */
 .hero-button {
   display: inline-block;
-  background: #3b82f6;
-  color: white;
+  background: transparent;
+  border: 2px solid var(--accent-blue);
+  color: var(--accent-blue);
   padding: 12px 24px;
-  border-radius: 8px;
+  border-radius: 4px;
   text-decoration: none;
   font-weight: 600;
-  margin-top: 15px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+
+.hero-button:hover {
+  background: var(--accent-blue);
+  color: var(--bg-dark);
 }
 
 .trust-grid {
@@ -65,7 +96,8 @@ section {
 }
 
 .trust-card {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.03);
   padding: 20px;
-  border-radius: 12px;
+  border: 1px solid var(--border-tech);
+  border-radius: 4px;
 }
