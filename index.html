@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atlas Pilot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>Deterministic Governance for High-Assurance Environments</h1>
+      <p>Hardware-anchored policy enforcement that prevents unsafe actions, maintains compliance, and reduces operational risk in mission-critical systems. Atlas is built for programs that demand deterministic control, auditability, and mission assurance.</p>
+      <div class="hero-actions">
+        <a class="hero-button" href="#contact">Request Deployment Demo</a>
+      </div>
+      <div class="trust-grid">
+        <article class="trust-card">
+          <strong>Mission-risk reduction</strong>
+          <p>Designed for high-assurance systems to reduce operational risk with hardware-backed protection and controlled runtime decisions.</p>
+        </article>
+        <article class="trust-card">
+          <strong>Deterministic governance</strong>
+          <p>Removes ambiguity from enforcement so policy outcomes stay consistent, repeatable, and safe across every execution.</p>
+        </article>
+        <article class="trust-card">
+          <strong>Audit-first safety</strong>
+          <p>Every decision is captured in tamper-resistant logs for compliance, accountability, and rapid incident response.</p>
+        </article>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section-card">
+      <h2>What this means for your program</h2>
+      <ul>
+        <li>Reduce failure and compliance risk by enforcing runtime safety before actions execute.</li>
+        <li>Keep mission teams aligned with policy through deterministic, auditable decisions.</li>
+        <li>Replace manual exception handling with a trusted runtime guardrail that is easy to verify.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>What Atlas Is</h2>
+      <p>Atlas is a hardened enforcement gate that validates action intent, enforces written policy, and stops risky commands before they execute. Every decision is captured in a tamper-resistant audit trail so clients can prove compliance and investigate incidents with confidence.</p>
+    </section>
+
+    <section class="section-card">
+      <h2>How Atlas Reduces Risk</h2>
+      <ul>
+        <li>Prevents unauthorized actions by enforcing policy before execution</li>
+        <li>Eliminates drift with deterministic decisions and immutable policy anchors</li>
+        <li>Provides full auditability for compliance, incident response, and war-room review</li>
+      </ul>
+    </section>
+
+    <section class="section-card">
+      <h2>Technical Architecture</h2>
+      <p>Atlas operates as a TPM-bound sidecar proxy that verifies runtime actions, generates attestation evidence, and enforces policy before execution.</p>
+      <ul>
+        <li>Hardware binding to TPM 2.0 for immutable trust anchors</li>
+        <li>Immutable audit trails for every transaction</li>
+        <li>Fail-closed enforcement for unauthorized actions</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>How Atlas Works</h2>
+      <ul>
+        <li>Loads a policy manifest from <code>policy.json</code></li>
+        <li>Receives an action and justification</li>
+        <li>Validates semantic anchors, rationale threshold, and required classes</li>
+        <li>Returns a deterministic decision</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Decision Outcomes</h2>
+      <div class="grid">
+        <article>
+          <h3>Authorized</h3>
+          <p>The action is approved and may proceed safely under enforced policy.
+          </p>
+        </article>
+        <article>
+          <h3>FailClosed</h3>
+          <p>The action is rejected without execution, preserving safety and halting risk propagation.</p>
+        </article>
+        <article>
+          <h3>HardwareKillState</h3>
+          <p>The action is blocked at the highest severity and the runtime is isolated to prevent further damage.</p>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <h2>Key Features</h2>
+      <ul>
+        <li>Deterministic policy enforcement</li>
+        <li>Attestation hash generation</li>
+        <li>HTTP/CLI runtime modes</li>
+        <li>Optional Supabase governance sync</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Integration</h2>
+      <p>Atlas can be integrated as a runtime service. It exposes a single HTTP endpoint:</p>
+      <pre><code>POST /ingest</code></pre>
+      <p>Clients submit telemetry-style packets and receive a policy decision in return.</p>
+    </section>
+
+    <section id="contact" class="section-card">
+      <h2>Commercial Engagement</h2>
+      <p>We are currently executing revenue-generating pilot evaluations through 45 day SOW agreements. Our focus is on independent, self-funded commercial growth for aerospace and defense programs.</p>
+      <p>Atlas turns policy into runtime safety, stopping unsafe actions, enforcing audit-first controls, and reducing program risk while preserving operator agility.</p>
+      <a class="hero-button" href="mailto:your-email@example.com">Schedule a briefing</a>
+      <p class="cta-note">15-minute briefing to align Atlas with your compliance, safety, and mission assurance goals.</p>
+    </section>
+  </main>
+</body>
+</html>
