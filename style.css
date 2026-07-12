@@ -22,6 +22,14 @@ body {
   margin-top: 28px;
 }
 
+.site-branding {
+  margin-bottom: 18px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.95rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 .trust-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
