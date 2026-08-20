@@ -43,6 +43,11 @@ body {
 
 .container { max-width: 900px; margin: 0 auto; padding: 24px; }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Section Components - Hardened UI style */
 section {
   margin-top: 32px;
