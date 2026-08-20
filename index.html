@@ -90,6 +90,10 @@
           <p>The action is blocked at the highest severity and the runtime is isolated to prevent further damage.</p>
         </article>
       </div>
+      <figure class="proof-figure">
+        <img src="images/terminal-execution.png" alt="Atlas terminal execution showing attestation, Supabase logging, telemetry receipt, and HardwareKillState enforcement" />
+        <figcaption>Terminal execution evidence showing attestation, telemetry receipt, Supabase logging, and fail-closed enforcement.</figcaption>
+      </figure>
     </section>
 
     <section>
@@ -107,6 +111,11 @@
       <p>Atlas is architected as a modular runtime service. It exposes a foundational HTTP endpoint interface:</p>
       <pre><code>POST /ingest</code></pre>
       <p>Clients submit telemetry-style packets and receive a policy decision in return.</p>
+      <div class="proof-block">
+        <h3>Supabase Telemetry</h3>
+        <p>Audit records capture event type, packet identity, payload, attestation, latency, legal hold state, and update time for independent review.</p>
+        <p class="proof-meta"><strong>Observed evidence:</strong> FAIL_CLOSED events, HardwareKillState results, SHA-256 attestation values, and millisecond-level latency records.</p>
+      </div>
     </section>
 
     <section id="contact" class="section-card">
