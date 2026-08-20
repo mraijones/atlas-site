@@ -11,8 +11,8 @@
     <div class="container">
       <div class="site-branding">ATLAS GOS INC.</div>
       <h1>Deterministic Governance for High-Assurance Environments</h1>
-      <p><strong>Patent Pending</strong></p>
-      <p>Hardware-anchored policy enforcement framework designed to prevent unsafe actions, maintain compliance, and reduce operational risk in mission-critical systems. Atlas provides foundational architectural control, auditability, and mission assurance.</p>
+      <p><strong>Patent Pending | TRL 5 Validated Architecture (Snapshot: 0dd2c60)</strong></p>
+      <p>Hardware-anchored policy enforcement framework designed to prevent unsafe actions, maintain compliance, and reduce operational risk in mission-critical systems. Atlas provides foundational architectural control, topology-validated chain integrity, and mission assurance.</p>
       <div class="trust-grid">
         <article class="trust-card">
           <strong>Mission-risk reduction</strong>
@@ -24,7 +24,7 @@
         </article>
         <article class="trust-card">
           <strong>Audit-first safety</strong>
-          <p>Every decision is captured in tamper-resistant logs for compliance, accountability, and rapid incident response.</p>
+          <p>Every decision and session artifact is captured in immutable, tamper-resistant logs for compliance and accountability.</p>
         </article>
       </div>
     </div>
@@ -42,7 +42,7 @@
 
     <section>
       <h2>What Atlas Is</h2>
-      <p>Atlas is an advanced runtime governance framework that validates action intent, enforces written policy, and stops risky commands before they execute. Every decision is captured in a tamper-resistant audit trail to prove compliance and investigate incidents with confidence.</p>
+      <p>Atlas is an advanced runtime governance framework that validates action intent, enforces written policy, and stops risky commands before they execute. Powered by topology-validated chain integrity (Snapshot: 0dd2c60), every decision is anchored securely to prevent branch divergence and model drift.</p>
     </section>
 
     <section class="section-card">
@@ -55,12 +55,12 @@
     </section>
 
     <section class="section-card">
-      <h2>Technical Architecture</h2>
-      <p>Atlas operates as a TPM-bound architecture that verifies runtime actions, generates attestation evidence, and enforces policy before execution.</p>
+      <h2>Technical Architecture & Verification</h2>
+      <p>Atlas operates as a TPM-bound architecture backed by rigorous regression testing and component hardening (Snapshot: 0dd2c60):</p>
       <ul>
         <li>Hardware binding to TPM 2.0 for immutable trust anchors</li>
-        <li>Immutable audit trails for every transaction</li>
-        <li>Fail-closed enforcement for unauthorized actions</li>
+        <li>Topology-validated chain integrity (active fork and orphan detection)</li>
+        <li>Fail-closed enforcement and write-once session artifact protection</li>
       </ul>
     </section>
 
@@ -69,7 +69,7 @@
       <ul>
         <li>Loads a policy manifest from <code>policy.json</code></li>
         <li>Receives an action and justification</li>
-        <li>Validates semantic anchors, rationale threshold, and required classes</li>
+        <li>Validates semantic anchors, rationale threshold, and required classes via runtime context boundaries</li>
         <li>Returns a deterministic decision</li>
       </ul>
     </section>
@@ -96,9 +96,9 @@
       <h2>Key Features</h2>
       <ul>
         <li>Deterministic policy enforcement</li>
-        <li>Attestation hash generation</li>
-        <li>HTTP/CLI runtime modes</li>
-        <li>Optional governance sync capabilities</li>
+        <li>Topology-validated chain history (Fork/Orphan rejection)</li>
+        <li>Attestation hash generation & HTTP/CLI runtime modes</li>
+        <li>Strict overwrite guards on session persistence</li>
       </ul>
     </section>
 
@@ -110,10 +110,10 @@
     </section>
 
     <section id="contact" class="section-card">
-      <h2>Research & Development Engagement</h2>
-      <p>We are currently advancing foundational proof-of-concept evaluations and architecture definition for aerospace and defense programs. Our focus is on maturing autonomous system safety and deterministic runtime control.</p>
+      <h2>Evaluation & Program Engagement</h2>
+      <p>Atlas has achieved a <strong>TRL 5 Validation</strong> milestone through rigorous regression-tested architecture (Snapshot: 0dd2c60), focusing on high-assurance aerospace, defense, and autonomous system safety.</p>
       <p>Atlas turns policy into runtime safety, stopping unsafe actions, enforcing audit-first controls, and reducing program risk while preserving operator agility.</p>
-      <p>For research inquiries, contact us at: <a href="mailto:Micheal@AtlasGOSInc.com">Micheal@AtlasGOSInc.com</a></p>
+      <p>For technical briefings and evaluation inquiries, contact us at: <a href="mailto:Micheal@AtlasGOSInc.com">Micheal@AtlasGOSInc.com</a></p>
     </section>
   </main>
 </body>
