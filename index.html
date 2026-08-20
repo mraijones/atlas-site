@@ -115,6 +115,10 @@
         <h3>Supabase Telemetry</h3>
         <p>Audit records capture event type, packet identity, payload, attestation, latency, legal hold state, and update time for independent review.</p>
         <p class="proof-meta"><strong>Observed evidence:</strong> FAIL_CLOSED events, HardwareKillState results, SHA-256 attestation values, and millisecond-level latency records.</p>
+        <figure class="proof-figure">
+          <img src="images/supabase-telemetry.png" alt="Supabase database schema showing Atlas audit log and telemetry tables" />
+          <figcaption>Supabase schema evidence showing the audit-log persistence surface used for telemetry review.</figcaption>
+        </figure>
       </div>
     </section>
 
